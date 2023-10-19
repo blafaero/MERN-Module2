@@ -1,0 +1,53 @@
+<!--
+<div id="ball" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:green"></div>
+-->
+
+<html>
+  <body></body>
+
+  <script src="./ball.js"></script>
+
+  <script>
+    // Define Scenario Parameters
+    var nballs = 100;
+    var vMin = -10;
+    var vMax = 10;
+
+    counter = 0;
+    while (counter < nballs) {
+      //var ball
+      //ball  = createRandom()
+      var ball = createRandom();
+      ball.vX = getRandomInt(vMin,vMax);
+      ball.vY = getRandomInt(vMin,vMax);
+
+
+
+      counter++;
+      //console.log(`Vx: ${vX} vY: ${vY}`)
+    }
+
+//   setInterval(moveBall,100)
+  
+    setInterval(moveBall,10,document.getElementsByClassName('ball'))
+
+//var velocityX = 5;
+//var velocityY = 3;
+//var positionX = 0;
+//var positionY = 0;
+//var ball = document.getElementById('ball');
+
+// YOUR CODE 
+// ----------------
+</script>
+
+
+</html>
